@@ -65,10 +65,9 @@ export class DialogAddEditComponent implements OnInit{
           salary: this.employeeData.salary,
           contractDate: moment(this.employeeData.contractDate,'DD/MMM/YYYY')
         })
+        this.titleAction = "Edit";
+        this.buttonAction = "Update";
       }
-
-      this.titleAction = "Edit";
-      this.buttonAction = "Update";
     }
 
     showAlert(message: string, action: string) {
